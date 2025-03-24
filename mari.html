@@ -1,1 +1,195 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food uh venuma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .category-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 100px;
+        }
+        .category {
+            text-align: center;
+            cursor: pointer;
+        }
+        .category img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+        }
+        .category-label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .recipe-container {
+            display: none;
+            margin-top: 50px;
+            text-align: left;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .recipe-container h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <h style="text-align: center;font-size: 100px;"><i><b>VANGA SAPADALAM</b></i></h><hr>
+
+    <div class="category-container">
+        <div class="category" data-category="chinese">
+            <img src="chinese_food.jpg" alt="Chinese" />
+            <div class="category-label">Chinese</div>
+        </div>
+        <div class="category" data-category="indian">
+            <img src="indian_food.jpg" alt="Indian" />
+            <div class="category-label">Indian</div>
+        </div>
+        <div class="category" data-category="italian">
+            <img src="italian_food.jpg" alt="Italian" />
+            <div class="category-label">Italian</div>
+        </div>
+    </div>
+
+    <div id="indian-recipes" class="recipe-container">
+        <h1>Indian Cuisine</h1>
+        <ul>
+            <li>
+                <strong>Butter Chicken (North India)</strong><br>
+                <em>Description:</em> A creamy tomato-based curry with tender pieces of chicken.<br>
+                <em>Ingredients:</em> Chicken, Tomatoes, Butter, Cream, Onions, Ginger-garlic paste, Spices (garam masala, chili powder, turmeric)<br>
+                <em>Recipe:</em> 1. Marinate chicken. 2. Sauté onions and ginger-garlic paste. 3. Add tomatoes and spices. 4. Cook until tomatoes soften. 5. Add chicken and cook. 6. Stir in butter and cream. 7. Simmer and serve.
+            </li>
+             <li>
+                <strong>Biryani (Various)</strong><br>
+                <em>Description:</em> A fragrant rice dish cooked with spices, meat, or vegetables.<br>
+                <em>Ingredients:</em> Rice, Meat (chicken, mutton, or vegetables), Onions, Ginger-garlic paste, Yogurt, Spices (biryani masala, saffron), Mint leaves, Coriander leaves<br>
+                <em>Recipe:</em> 1. Marinate meat/vegetables. 2. Sauté onions and ginger-garlic paste. 3. Layer rice and meat/vegetables. 4. Cook on low heat. 5. Garnish with mint and coriander leaves.
+            </li>
+        </ul>
+    </div>
+
+    <div id="chinese-recipes" class="recipe-container">
+        <h1>Chinese Cuisine</h1>
+         <div class="dish">
+            <h2>Kung Pao Chicken (宫保鸡丁)</h2>
+            <p>A spicy stir-fry dish with chicken, peanuts, vegetables, and chili peppers.</p>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Chicken breast</li>
+                <li>Peanuts</li>
+                <li>Dried chili peppers</li>
+                <li>Scallions</li>
+                <li>Ginger</li>
+                <li>Garlic</li>
+                <li>Soy sauce</li>
+            </ul>
+            <h3>Recipe:</h3>
+            <ol>
+                <li>Cut chicken into cubes and marinate with soy sauce.</li>
+                <li>Heat oil in a wok and stir-fry chicken until cooked.</li>
+                <li>Add chili peppers, scallions, ginger, and garlic and stir-fry until fragrant.</li>
+                <li>Add peanuts and stir-fry.</li>
+                <li>Serve hot.</li>
+            </ol>
+        </div>
+         <div class="dish">
+            <h2>Mapo Tofu (麻婆豆腐)</h2>
+            <p>A spicy and flavorful tofu dish with ground meat in a chili-bean sauce.</p>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Tofu</li>
+                <li>Ground pork or beef</li>
+                <li>Doubanjiang (chili bean paste)</li>
+                <li>Soy sauce</li>
+            </ul>
+            <h3>Recipe:</h3>
+            <ol>
+                <li>Cut tofu into cubes.</li>
+                <li>Heat oil in a wok and stir-fry ground meat until cooked.</li>
+                <li>Add doubanjiang, garlic, and ginger and stir-fry until fragrant.</li>
+                <li>Add soy sauce and water and bring to a boil.</li>
+                <li>Add tofu and gently simmer.</li>
+                <li>Serve hot.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="italian-recipes" class="recipe-container">
+        <h1>Italian Cuisine</h1>
+        <div class="recipe">
+            <h2>Pizza Margherita</h2>
+            <p class="details">Cuisine: Italian | Prep Time: 20 minutes | Cook Time: 20 minutes | Servings: 4</p>
+            <p>A classic Italian pizza with fresh mozzarella, tomatoes, and basil.</p>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 pizza dough</li>
+                <li>1 cup tomato sauce</li>
+                <li>8 oz fresh mozzarella cheese, sliced</li>
+                <li>Fresh basil leaves</li>
+                <li>Olive oil</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 450°F (230°C).</li>
+                <li>Roll out pizza dough on a floured surface.</li>
+                <li>Spread tomato sauce over the dough.</li>
+                <li>Arrange mozzarella slices on top.</li>
+                <li>Bake for 15-20 minutes, or until crust is golden brown and cheese is melted.</li>
+                <li>Top with fresh basil leaves and drizzle with olive oil.</li>
+            </ol>
+        </div>
+        <div class="recipe">
+             <h2>Spaghetti Carbonara</h2>
+             <p class="details">Cuisine: Italian | Prep Time: 15 minutes | Cook Time: 20 minutes | Servings: 4</p>
+             <p>A classic Roman pasta dish with eggs, pancetta, Pecorino Romano cheese, and black pepper.</p>
+             <h3>Ingredients:</h3>
+             <ul>
+                <li>1 lb spaghetti</li>
+                <li>4 oz pancetta, diced</li>
+                <li>3 large eggs</li>
+                <li>1 cup Pecorino Romano cheese, grated</li>
+             </ul>
+             <h3>Instructions:</h3>
+             <ol>
+                <li>Cook spaghetti according to package directions.</li>
+                <li>While pasta cooks, sauté pancetta in a skillet until crispy.</li>
+                <li>In a bowl, whisk eggs, Pecorino Romano cheese, and black pepper.</li>
+                <li>Drain pasta, reserving some pasta water.</li>
+                <li>Add pasta to skillet with pancetta.</li>
+                <li>Remove skillet from heat, add egg mixture, and toss quickly.</li>
+                <li>Add pasta water as needed to create a creamy sauce.</li>
+                <li>Serve immediately.</li>
+             </ol>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.category').forEach(category => {
+            category.addEventListener('click', function() {
+                const categoryName = this.dataset.category;
+                document.querySelectorAll('.recipe-container').forEach(recipeContainer => {
+                    recipeContainer.style.display = 'none';
+                });
+                document.getElementById(`${categoryName}-recipes`).style.display = 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
